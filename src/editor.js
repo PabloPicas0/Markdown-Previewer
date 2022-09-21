@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +8,7 @@ import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 const editor = () => {
   return (
     <div>
-      <div>
+      <div className="d-flex justify-content-between">
         <div>
           <FontAwesomeIcon icon={faFreeCodeCamp} />
           <span>text edit</span>
@@ -16,7 +17,7 @@ const editor = () => {
           <FontAwesomeIcon icon={faWindowMaximize} />
         </button>
       </div>
-      <textarea />
+      <textarea className="text-area" />
     </div>
   );
 };

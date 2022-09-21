@@ -9,3 +9,9 @@
   color: white;
 }
 
+.text-area {
+  color: black;
+  width: 99%;
+  min-height: 200px;
+}
+
