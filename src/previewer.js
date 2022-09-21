@@ -17,7 +17,7 @@ const previewer = () => {
           <FontAwesomeIcon icon={faWindowMaximize} />
         </button>
       </div>
-      <div className="text-area shadow bg-white">
+      <div className="text-preview shadow bg-white">
         <p>jknjdnas</p>
       </div>
     </div>
