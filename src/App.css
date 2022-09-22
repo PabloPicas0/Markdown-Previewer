@@ -2,15 +2,34 @@
   background-color: #282c34;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .text-area {
-  color: black;
-  width: 99%;
-  min-height: 200px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 95vh;
 }
 
 .text-preview {
-  min-height: 200px;
+  height: 95vh;
+  background-color: black;
+  color: white;
+}
+@media all and (max-width: 991px) {
+  .text-area {
+    height: 200px;
+  }
+  .text-preview {
+    height: 350px;
+  }
+}
+
+.bg-belt {
+  color: black;
+  background-color: #eee;
+}
+
+.btn-outline-dark {
+  border: none !important;
 }

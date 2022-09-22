@@ -6,12 +6,12 @@ import Previewer from "./previewer";
 
 function App() {
   return (
-    <div className="container-fluid p-0">
-      <div className="row">
-        <div className="col-lg-6 col-12">
+    <div className="container-fluid bg-dark">
+      <div className="min-vh-100 row">
+        <div className="col-lg-5 mt-2">
           <Editor />
         </div>
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-7 mt-2">
           <Previewer />
         </div>
       </div>
