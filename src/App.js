@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="container-fluid bg-dark">
       <div className="min-vh-100 row">
-        <div className="col-lg-5 mt-2">
+        <div className="col-lg-5 mt-3">
           <Editor />
         </div>
-        <div className="col-lg-7 mt-2">
+        <div className="col-lg-7 mt-3">
           <Previewer />
         </div>
       </div>
