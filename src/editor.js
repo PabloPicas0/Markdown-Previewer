@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMaximize } from "@fortawesome/free-solid-svg-icons";
 import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 
-const editor = () => {
+const Editor = (props) => {
   return (
     <div>
       <div className="d-flex justify-content-between align-items-center bg-belt">
@@ -17,9 +17,14 @@ const editor = () => {
           <FontAwesomeIcon icon={faMaximize} />
         </button>
       </div>
-      <textarea className="text-area overflow-auto" />
+      <textarea
+        id="editor"
+        className="text-area overflow-auto"
+        onChange={props.change}
+        value={props.input}
+      />
     </div>
   );
 };
 
-export default editor;
+export default Editor;

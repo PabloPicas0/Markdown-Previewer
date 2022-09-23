@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMaximize } from "@fortawesome/free-solid-svg-icons";
 import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 
-const previewer = () => {
+import { marked } from "marked";
+
+const Previewer = (props) => {
   return (
     <div>
       <div className="d-flex justify-content-between align-items-center bg-belt">
@@ -17,11 +19,12 @@ const previewer = () => {
           <FontAwesomeIcon icon={faMaximize} />
         </button>
       </div>
-      <div className="text-preview shadow p-2 overflow-auto">
-        <p>jknjdnas</p>
-      </div>
+      <div
+        id="preview"
+        className="text-preview shadow p-2 overflow-auto"
+        dangerouslySetInnerHTML={{ __html: marked.parse(props.input) }}></div>
     </div>
   );
 };
 
-export default previewer;
+export default Previewer;
