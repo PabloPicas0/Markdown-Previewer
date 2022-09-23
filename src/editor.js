@@ -13,13 +13,16 @@ const Editor = (props) => {
           <FontAwesomeIcon icon={faFreeCodeCamp} />
           <span className="ms-1">Text Editor</span>
         </div>
-        <button type="button" className="btn btn-outline-dark" onClick={props.click}>
+        <button
+          type="button"
+          className="btn btn-outline-dark"
+          onClick={props.click}>
           <FontAwesomeIcon icon={faMaximize} />
         </button>
       </div>
       <textarea
         id="editor"
-        style={{height: props.onlyEdit ? "" : "91vh"}}
+        style={{ height: props.onlyEdit ? "" : "91vh" }}
         className="text-area overflow-auto"
         onChange={props.change}
         value={props.input}

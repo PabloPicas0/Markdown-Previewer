@@ -15,13 +15,16 @@ const Previewer = (props) => {
           <FontAwesomeIcon icon={faFreeCodeCamp} />
           <span className="ms-1">Previewer</span>
         </div>
-        <button type="button" className="btn btn-outline-dark" onClick={props.click}>
+        <button
+          type="button"
+          className="btn btn-outline-dark"
+          onClick={props.click}>
           <FontAwesomeIcon icon={faMaximize} />
         </button>
       </div>
       <div
         id="preview"
-        style={{height: props.onlyPreview ? "" : "91vh"}}
+        style={{ height: props.onlyPreview ? "" : "91vh" }}
         className="text-preview shadow p-2 overflow-auto"
         dangerouslySetInnerHTML={{ __html: marked.parse(props.input) }}></div>
     </div>

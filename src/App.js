@@ -37,7 +37,11 @@ function App() {
         <div
           style={{ display: onlyEdit ? "block" : "none" }}
           className={`col-lg-${onlyPreview ? "7" : "12"} mt-3`}>
-          <Previewer input={input} onlyPreview={onlyPreview} click={handlePreviewClick}/>
+          <Previewer
+            input={input}
+            onlyPreview={onlyPreview}
+            click={handlePreviewClick}
+          />
         </div>
       </div>
     </div>
