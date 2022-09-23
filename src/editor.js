@@ -22,7 +22,7 @@ const Editor = (props) => {
       </div>
       <textarea
         id="editor"
-        style={{ height: props.onlyEdit ? "" : "91vh" }}
+        style={{ height: props.onlyEdit ? "91vh" : "" }}
         className="text-area overflow-auto"
         onChange={props.change}
         value={props.input}

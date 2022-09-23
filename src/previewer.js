@@ -24,7 +24,7 @@ const Previewer = (props) => {
       </div>
       <div
         id="preview"
-        style={{ height: props.onlyPreview ? "" : "91vh" }}
+        style={{ height: props.onlyPreview ? "91vh" : "" }}
         className="text-preview shadow p-2 overflow-auto"
         dangerouslySetInnerHTML={{ __html: marked.parse(props.input) }}></div>
     </div>

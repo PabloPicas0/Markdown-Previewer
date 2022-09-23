@@ -6,8 +6,8 @@ import Previewer from "./previewer";
 
 function App() {
   const [input, setInput] = useState("");
-  const [onlyEdit, setOnlyEdit] = useState(true);
-  const [onlyPreview, setOnlyPreview] = useState(true);
+  const [onlyEdit, setOnlyEdit] = useState(false);
+  const [onlyPreview, setOnlyPreview] = useState(false);
 
   const handlePreviewClick = () => {
     setOnlyPreview(!onlyPreview);
@@ -25,8 +25,8 @@ function App() {
     <div className="container-fluid bg-dark">
       <div className="min-vh-100 row">
         <div
-          style={{ display: onlyPreview ? "block" : "none" }}
-          className={`col-lg-${onlyEdit ? "5" : "12"} mt-3`}>
+          style={{ display: onlyPreview ? "none" : "block" }}
+          className={`col-lg-${onlyEdit ? "12" : "5"} mt-3`}>
           <Editor
             input={input}
             change={handleChange}
@@ -35,8 +35,8 @@ function App() {
           />
         </div>
         <div
-          style={{ display: onlyEdit ? "block" : "none" }}
-          className={`col-lg-${onlyPreview ? "7" : "12"} mt-3`}>
+          style={{ display: onlyEdit ? "none" : "block" }}
+          className={`col-lg-${onlyPreview ? "12" : "7"} mt-3`}>
           <Previewer
             input={input}
             onlyPreview={onlyPreview}
