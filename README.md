@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Markdown Previewer 
+---
+Hi, I'm [Paweł](https://github.com/PabloPicas0), and this is my React Markdown Previewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project was only for learning purposes and as a part of **Front End Development Libraries Projects** by [FreeCodeCamp](https://www.freecodecamp.org/)
 
-## Available Scripts
+The challange can be finded [Here](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer)
 
-In the project directory, you can run:
+## Markdown usage is simple, here it is basic syntax:
+<br/>
+<br/>
 
-### `npm start`
+### 1. Headings:
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Largest Heading
+---
+## Second Largest Heading
+---
+### Third Largest Heading
+---
+###### Smallest Heading
+---
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Styling Text
+<br/>
+Inline code
 
-### `npm test`
+*Italic text* or _Italic text_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Bold text** or __Bold text__
 
-### `npm run build`
+_**Bold and italic text**_
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+or
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+***Bold and italic text***
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Bold with _italic nesting_**
 
-### `npm run eject`
+~~Strikethrough text~~
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> NOTE: Text is rendered on a new line only if there is an empty line in between.
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Lists
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Unordered list
+* Unordered list
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Ordered list
+1. Ordered list
 
-## Learn More
+- **Writing under the same list item**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Add two to three whitespaces below a list item to render a paragraph under the list item
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Unordered list nesting**
+- Unordered nested list item
+- Unordered nested list item
+   - Unordered nested list item
 
-### Code Splitting
+1. **Ordered list nesting**
+1. Ordered nested list item
+1. Ordered nested list item
+   1. Ordered nested list item
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Ordered and unordered list nesting**
+- Unordered nested list item
+   1. Ordered nested list item
+   1. Ordered nested list item
+- Unordered nested list item
 
-### Analyzing the Bundle Size
+> NOTE: Keep adding 3 whitespaces before hyphen for every level of nesting.
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Quoting Text
+<br/>
 
-### Making a Progressive Web App
+> Quoted text
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+>> Nested quote
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 5. Task Lists
+</br>
 
-### Deployment
+- [x] Complete task
+- [x] Complete task
+- [x] Complete task
+- [ ] Incomplete task
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 7. Quoting Code
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+// this is a multi-line code:
+
+function doSomething(code) {
+  if (code === 0) {
+    return "Done!";
+  }
+  doSomething(code - 1)
+}
+```
+
+And here is example of inline code:
+
+> ` let message = "Thank you for using Preview Markdown!"; `

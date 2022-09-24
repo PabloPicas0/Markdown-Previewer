@@ -39,3 +39,20 @@
 .btn-outline-dark {
   border: none !important;
 }
+
+img {
+  width: 100%;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 1em 10px 0.1em 10px;
+}
+
+pre {
+  padding: 10px;
+  font-size: .875em;
+  color: var(--bs-gray-dark);
+  background-color: var(--bs-gray-100);
+}
