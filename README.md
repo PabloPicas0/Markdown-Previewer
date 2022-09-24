@@ -8,7 +8,6 @@ The challange can be finded [Here](https://www.freecodecamp.org/learn/front-end-
 
 ## Markdown usage is simple, here it is basic syntax:
 <br/>
-<br/>
 
 ### 1. Headings:
 <br/>
