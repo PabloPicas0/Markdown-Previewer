@@ -121,9 +121,6 @@ And here is example of inline code:
 > \` let message = "Thank you for using Preview Markdown!"; \`
 `;
 
-
-//TODO  inline code, a code block, a list item,
-
 function App() {
   const [input, setInput] = useState(welcomeText);
   const [onlyEdit, setOnlyEdit] = useState(false);
