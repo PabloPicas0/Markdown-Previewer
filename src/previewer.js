@@ -7,6 +7,10 @@ import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 
 import { marked } from "marked";
 
+marked.setOptions({
+  breaks: true
+})
+
 const Previewer = (props) => {
   return (
     <div>
