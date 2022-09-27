@@ -127,11 +127,11 @@ function App() {
   const [onlyPreview, setOnlyPreview] = useState(false);
 
   const handlePreviewClick = () => {
-    setOnlyPreview(!onlyPreview);
+    setOnlyPreview((lastPreview) => !lastPreview);
   };
 
   const handleEditClick = () => {
-    setOnlyEdit(!onlyEdit);
+    setOnlyEdit((lastEdit) => !lastEdit);
   };
 
   const handleChange = (e) => {
